@@ -3,31 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | NFT preview card component</title> 
 </head>
 <body>
+  <div class="container flex col">
+    <img class="logo-pic" src="images/image-equilibrium.jpg" alt="euqil pic">
+    <h1>Equilibrium #3429</h1>
 
-  Equilibrium #3429
+    <p>Our Equilibrium collection promotes balance and calm.</p> 
 
-  Our Equilibrium collection promotes balance and calm.
+    <div class="count-down flex">
+      <div class="eth-section flex">
+        <img src="images/icon-ethereum.svg" alt="diamond">
+        <p>0.041 ETH</p>                 
+      </div>
+      <div class="days-section flex">
+        <img src="images/icon-clock.svg" alt="clock">
+        <p>3 days left</p> 
+      </div>      
+    </div>
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+    <div class="divider-line"></div>
+    
+    <div class="creation-section flex">
+      <img class="avatar-pic" src="images/image-avatar.png" alt="avatar">
+      <p>Creation of <span>Jules Wyvern</span></p>
+    </div> 
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="divider-line"></div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
+      Coded by <a href="https://www.frontendmentor.io/profile/joyrexjrl" target="_blank">Rick Lozano</a>.
+    </div>
+  </div>    
 </body>
 </html>
